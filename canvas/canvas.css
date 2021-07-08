@@ -1,15 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic");
+
 *{
     border:0;
     padding:0;
     box-sizing: border-box;
 }
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 
-#canvas {
-    border: 1px solid black;
 }
 canvas {
-    background-color: white; 
-    width: 100%;
-    height: auto;
+    background-color: white;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    box-shadow: -3px 2px 9px 6px black;
+    cursor: crosshair;
   }
-  
+
+.tools
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.tools .svg
+{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    color: rgb(8, 95, 138);
+    background : rgb(214, 230, 227);
+    border-radius: 15%;
+    font-weight: bold;
+    margin : 0 10px;
+    cursor: pointer;
+}
+.color-picker
+{
+    align-self: center;
+    margin: 0 10px;
+    height: 50px;
+    cursor: pointer;
+}
+.pen-range
+{
+    align-self: center;
+    margin: 0 10px;
+    /* height: 15px; */
+    cursor: pointer;
+}
+.author
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
